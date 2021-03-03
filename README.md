@@ -1,8 +1,3 @@
-# web-platform-xi26xx
+This is fully accessible wesbite which I created as a part of Hackathon for an All USA competition which I secured third place.
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-xi26xx)
-
-1) clone the repo
-2) run npm install
-3) run "gulp build" to build the project
-4) run "npm start" to run it on local
+To run this site: npm start
