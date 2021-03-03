@@ -1,0 +1,60 @@
+
+    <div class="container-box">
+    <div class="container header-logo-search">
+      <a href="index.html" class="logo">
+        <img class="logo-class" src="img/um-final-logo.jpg" alt="Uniformed Meditation your front-line to mindfulness" />
+      </a>
+
+        <form role="search" method="get" id="searchform" action="search-results" class="search-results margin-form-tp40">
+          <div class="input-group">
+            <label for="search-field" class="screenreader-text">Search for content</label>
+            <input aria-label="Search" type="text" class="form-input-control" placeholder="Search" name="search-input" id="search-field">
+            <div class="input-group-btn">
+              <button class="btn btn-default" id="searchsubmit" type="submit" value="search submit">
+                <i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Search</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="nav-bar">
+        <section class="mobile-navigation">
+        
+          <div class="dropdown">
+            <nav role="navigation" aria-label="Main">
+              <button class="btn-menu btn-default dropdown-toggle" type="button" id="button" aria-haspopup="true"
+                aria-expanded="false" aria-controls="menu" aria-label="Navigation">
+                <span class='icon-menu'></span>
+                <span class="other-trigger-status screenreader-text closed">Open</span>
+
+              </button>
+              <ul class="dropdown-menu-mobile mobile-nav-list nav-active-class" id="menu" tabindex="-1">
+                <li><a href="index.html" {% if pagetitle == "Home" %} aria-current="page" class="active" {% endif %}>Home</a></li>
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="media.html">Media</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li class="primary-nav__active">
+                  <a href="contact.html">Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        <nav class="main navigation desktop-navigation">
+          <ul class="nav-list-item nav-active-class">
+            <li><a href="index.html" {% if pagetitle == "Home" %} aria-current="page" class="active" {% endif %}>Home</a></li>
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="media.html">Media</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li class="primary-nav__active">
+                  <a href="contact.html">Contact
+                  </a>
+                </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+

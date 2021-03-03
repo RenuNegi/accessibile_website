@@ -1,0 +1,48 @@
+{% set pagetitle = 'Media -' %}
+{% set pagedesc = 'Uniformed meditation media' %}
+
+{% extends "partials/base_template.twig" %}
+
+ {% block blockMainContent %}
+    <section aria-labelledby="media_heading1" class="margin-spacer">
+        <div class="container center">
+            <h1 id="media_heading1">Free Meditation Resources</h1>
+
+            <div class="card text-center pb-5 border-0"  id="media-card" >
+                <div class="card-body">
+                    <ul class="nav nav-pills nav-fill justify-content-center my-5" id="pills-tab" role="tablist">
+                        <li class="nav-item border border-secondary rounded-0" role="presentation">
+                            <a class="nav-link active" id="pills-english-tab" data-toggle="pill" href="#pills-english" role="tab" aria-controls="pills-english" aria-selected="true">English</a>
+                        </li>
+                        <li class="nav-item border border-secondary rounded-0" role="presentation">
+                            <a class="nav-link" id="pills-spanish-tab" data-toggle="pill" href="#pills-spanish" role="tab" lang="es" aria-controls="pills-spanish" aria-selected="false">Spanish</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content container center pad-30" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-english" role="tabpanel" aria-labelledby="pills-english-tab">
+
+                            <iframe width="" height="315" src="https://www.youtube.com/embed/2wJwUVTnDRI" title="English video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            <p class="my-5">A meditation on patience and letting go. Have faith the universe always has your back.</p>
+                            <a href="media-transcript-en.html" class="mb-5 link-primary-um" target="_blank">Video transcript (opens in new window) <i class="fa fa-chevron-right fa-1"
+              aria-hidden="true"></i></a>
+                        </div>
+                        <div class="tab-pane fade" id="pills-spanish" lang="es" role="tabpanel" aria-labelledby="pills-spanish-tab">
+                            <iframe width="" height="315" src="https://www.youtube.com/embed/NIlk2vAaGb4" title="Spanish video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                            <p class="my-5">Existe un momento especial cuando nos damos el tiempo de estar presentes y agradecemos la respiración.</p>
+                            <a href="media-transcript-es.html" class="mb-5 link-primary-um" target="_blank" lang="en">Video transcript (opens in new window) <i class="fa fa-chevron-right fa-1"
+              aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+ {% endblock %}
+
+ {% include 'partials/footer.twig' %}

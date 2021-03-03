@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    {% include 'head.twig' %}
+</head>
+
+<body tabindex="-1" class="preload">
+ <a href="#skip_to_main" class="skip-button skip-btn">Skip to main content</a>
+
+ <header>
+     {% include 'header.twig' %}
+ </header>
+ 
+  <main id="skip_to_main">
+    {% block blockMainContent %}
+        {% endblock %}
+         <div class="back-to-top-wrapper">
+      <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">
+      <img src="img/back_to_top.jpg" alt="back to top"/></a>
+    </div>
+  </main> 
+  
+  
+ 
+  <footer class="footer-box pad-30">
+     {% include 'footer.twig' %}
+  </footer>
+
+</body>
+</html>

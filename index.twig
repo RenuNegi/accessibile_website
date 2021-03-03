@@ -1,0 +1,99 @@
+
+{% set pagetitleback = '- Your front-line to mindfulness'%}
+{% set pagedesc = 'Uniformed meditation home page' %}
+
+{% extends "partials/base_template.twig" %}
+
+
+   {% block blockMainContent %}
+ 
+    <section class="site-image-container" aria-labelledby="main-heading">
+     
+      <div class="hero-image"><img src="img/um_main.jpg" alt="A woman walks through a pebble maze meditating on a calming sandbank, encircled by ocean waves slolwy splashing against rocks."/>
+      <span class="photo-credit">Photo credit: Ashley Batz</span></div>
+      <div class="site-banner container">
+          <div class="header">
+            <h1 id="main-heading">We are Your Frontline to Mindfulness.</span></h1>
+            <p>We are dedicated to giving first responders and front&ndash;line workers an on&ndash;demand meditation
+             experience while also promoting and empowering sustainable ways to reach wellness. 
+             This is our way of giving back in appreciation for all you do! You're only one call away 
+             from mindfulness with Uniformed Meditation (U.M).</p>
+        {# <div class="pad-20"> <button class="button">Call us @XXX-XXX-XXXX</button></div> #}
+        
+           </div>
+          <!-- Button trigger modal -->
+           <div class="pad-20 center"> 
+           <button type="button" class="button" data-toggle="modal" data-target="#callDetail_modal">Our Call details</button></div>
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="callDetail_modal" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title" id="modal-title">Our contact details</h1>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                <p>
+                  
+Uniformed Meditation brings guided meditation through a call-in program for first responders and front-line workers for healthy lifestyle practices.
+For full access to our hotline, a pin is required. Please reach out for a consultation.
+               </p>
+               
+               <p>Call us at <a href="tel:18559454023" class="link-primary-um link-primary-underline">1-855-945-4023</a>. <br>For people requiring TTY Services dial <a href="tel:18004211220" class="link-primary-um link-primary-underline">1800-421-1220</a> or 711.
+              </p>
+               </div>
+                {# <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  
+                </div> #}
+              </div>
+            </div>
+          </div>
+         
+        </div>
+
+    </section>
+
+
+      <section class="margin-spacer mobile-pad" aria-labelledby="heading2_main">
+      <div class="grid-box row">
+        <div class="col-md-6 contact-box">
+          <h2 id="heading2_main">Safe and Accessible Space</h2>
+          <p>We value trust, building community, and being an ally to front–line workers and first responders.</p>
+          <a href="about-us.html" class="link-primary-um" aria-label="">Check out some interesting facts about us <i class="fa fa-chevron-right fa-1"
+              aria-hidden="true"></i></a>
+        </div>
+
+        <div class="meditate-image col-md-6">
+          <img src="img/grid-image.jpg" alt="" />
+        </div>
+       
+      </div>
+       <span class="photo-credit">Photo credit: Samuel Austin</span>
+    </section>
+
+ <section class="center-content" aria-labelledby="heading2_3">
+      <div class="container content-text">
+        <h2 id="heading2_3">
+          Medical Advice Disclaimer 
+        </h2>
+        <p>
+DISCLAIMER: THIS WEBSITE DOES NOT PROVIDE MEDICAL ADVICE.
+</p>
+<p>
+The information, including but not limited to, text, graphics, images and other material contained on this website are for informational purposes only. No material on this site is intended to be a substitute for professional medical advice, diagnosis or treatment. Always seek the advice of your physician or other qualified healthcare provider with any questions you may have regarding a medical condition or treatment and before undertaking a new health care regimen, and never disregard professional medical advice or delay in seeking it because of something you have read on this website.
+ </p>
+        {# <button class="button">Button copy</button> #}
+      </div>
+    </section>
+
+
+ {% endblock %}
+   {% include 'partials/footer.twig' %}
+
+
+

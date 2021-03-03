@@ -1,0 +1,59 @@
+{% set pagetitle = 'Sitemap -' %}
+{% set pagedesc = 'Uniformed meditation sitemap page' %}
+
+{% extends "partials/base_template.twig" %}
+
+ {% block blockMainContent %}
+
+ <section aria-labelledby="sitemap-structure">
+    <div class="container">
+    <h1 class="center" id="sitemap-structure">Sitemap</h1>
+
+    <div class="sitemap">
+    
+    <ul class="site-parent">
+        <li>
+            <a href="index.html" title="home page">Home</a>
+            {# <ul class="site-child">
+                    <li><a href="about-us.html" title="About us page">About us</a></li>
+            </ul> #}
+        </li>
+        <li><a href="about-us.html" title="About us page">About us</a></li>
+
+        <li>
+            <a href="services.html" title="services page">Services</a>
+             {# <ul class="site-child">
+                <li><a href="careers.html" title="careers page">Careers</a></li>
+            </ul> #}
+        </li>
+
+         {# <li><a href="careers.html" title="careers page">Careers</a></li> #}
+        <li>
+            <a href="media.html" title="media page">Media</a>
+        </li>
+        <li>
+            <a href="blogs.html" title="blogs page">Blogs</a>
+            <ul class="site-child">
+                <li><a href="mindfulness-self-care-blog.html">Self-Care blog</a></li>
+                 <li><a href="mindfulness-santizer-wipes-blog.html">Sanitizer Wipes blog</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html" title="contact page">Contact</a>
+            {# <ul class="site-child">
+            <li><a href="faq.html" title="faq page">FAQ</a></li>
+        
+            </ul> #}
+         </li>
+
+          <li><a href="faq.html" title="faq page">FAQ</a></li>
+           <li><a href="volunteers.html" title="Volunteer page">Volunteer</a></li>
+            <li><a href="accessibility-statement.html" title="Accessibility statement's page">Accessibility statement</a></li>
+    </ul>
+    
+    </div>
+    
+    </div>
+ </section>
+
+ {% endblock %}
+   {% include 'partials/footer.twig' %}

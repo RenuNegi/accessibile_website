@@ -1,0 +1,30 @@
+{
+  "name": "air2020",
+  "version": "1.0.0",
+  "description": "[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-xi26xx)",
+  "main": "script.js",
+  "scripts": {
+    "start": "gulp",
+    "deploy": "gulp build && firebase deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RenuNegi/Air2020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RenuNegi/Air2020/issues"
+  },
+  "homepage": "https://github.com/RenuNegi/Air2020#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^6.0.0",
+    "firebase-tools": "^8.12.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-twig": "^1.2.0",
+    "gulp-webserver": "^0.9.1",
+    "node-sass": "^4.14.1"
+  }
+}

@@ -1,0 +1,51 @@
+{% set pagetitle = 'Blogs -' %}
+{% set pagedesc = 'Uniformed meditation Blogs' %}
+
+{% extends "partials/base_template.twig" %}
+
+ {% block blockMainContent %}
+
+ <section aria-labelledby="blog-heading">
+    <div class="container center pad-30">
+         <h1 id="blog-heading">Mindfulness Weekly</h1>
+         <div class="margintp-30 pad-30">
+            <ul class="blog-list row">
+                <li class="blog-list-item col-md-6">
+                    <div>
+                       
+                            <img src="img/meditate-image-2.jpg" alt=""/>
+                       
+                        <div class="blog-content">
+                            <span class="blog-link-btn">Mindfulness</span>
+                            <a href="mindfulness-self-care-blog.html"><h2 class="blog-headling">
+                                 Find Your Sacred Self-Care Ritual &ndash; Time
+                            </h2></a>
+                            <p>Let’s talk about YOU. Particularly building your very own self&ndash;care ritual that may tweak or evolve over time but, that will always be sacred and uniquely YOU.</p>
+                        </div>
+                    </div>
+                
+                </li>
+                 <li class="blog-list-item col-md-6">
+                    <div>
+                        
+                            <img src="img/blog.jpg" alt=""/>
+                        
+                        <div class="blog-content">
+                            <span class="blog-link-btn">Mindfulness</span>
+                           <a href="mindfulness-santizer-wipes-blog.html"> <h2 class="blog-headling">
+                                Consumer Convenience vs. Sustainability &ndash; Sanitizer Wipes
+                            </h2></a>
+                            <p>Did you know that sanitizer wipes are loading up the landfills? It’s convenient yet toxic to the earth. </p>
+                        </div>
+                    </div>
+                
+                </li>
+               
+            </ul>
+         </div>
+
+    </div>
+ </section>
+ {% endblock %}
+
+ {% include 'partials/footer.twig' %}

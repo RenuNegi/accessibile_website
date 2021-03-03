@@ -1,0 +1,122 @@
+
+{% set pagetitle = 'Contact us -' %}
+{% set pagedesc = 'Uniformed Meditation contact us' %}
+
+{% extends "partials/base_template.twig" %}
+
+ {% block blockMainContent %}
+
+  <section aria-labelledby="contactUs" class="center margin-spacer">
+   
+    <div class="container pad-30">
+        <h1 id="contactUs">Get in touch</h1>
+        <p> The brain is a muscle that needs to work out uneasiness and tension. 
+        We value meditation as a tool to exercise the mind and help build focus, release worrying thoughts, 
+        and to honor the depths of who we are.
+Schedule a complimentary 10-minute phone consultation to see if we fit your particular needs and goals.</p>
+         <a href="faq.html" class="link-primary-um" aria-label="">Some frequently asked questions <i class="fa fa-chevron-right fa-1"
+              aria-hidden="true"></i></a>
+    </div>
+   
+   </section>
+
+
+   <section class="pad-30" aria-labelledby="heading2_2">
+      <div class="grid-box row">
+        <div class="col-md-7 contact-box">
+          <h2 id="heading2_2">Contact Details</h2>
+          {# <div class="pad-30 contact-info"><span>Mailing Address</span>
+          <span>Lorem ipsum dolor sit amet</span></div> #}
+          <div class="pad-30 contact-info"><span>Email Address</span>
+          <span><a href="mailto:Info@uniformedmeditation.com" class="link-primary-um link-primary-underline">Info@uniformedmeditation.com</a></span></div>
+           <div class="pad-30 contact-info"><span>Phone Number</span>
+          <span><a href="tel:6463890003" class="link-primary-um link-primary-underline">646-389-0003</a></span><br/>
+          <span>TTY Services dial: <a href="tel:18559454023" class="link-primary-um link-primary-underline">1-855-945-4023</a></span></div>
+         
+          {# <a href="url" class="link-primary-um" aria-label="">Link text FPO <i class="fa fa-chevron-right fa-1"
+              aria-hidden="true"></i></a> #}
+        </div>
+
+        <div class="meditate-image col-md-5">
+          <img src="img/contact.jpg" alt="" />
+        </div>
+      </div>
+       <span class="photo-credit">Photo credit: Corinne Kutz</span>
+    </section>
+   {# <section aria-labelledby="contactUs">
+    <div class="contact-bg">
+     
+    </div>
+    <div class="container pad-30">
+        <h1 id="contactUs">Get in touch</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat</p>
+    </div>
+   
+   </section> #}
+   <section class="margin-spacer" aria-labelledby="heading-feedback">
+        <div class="container displayNone" id="success-message">
+                <h2>Thank you! Your feedback has been sent.</h2>
+
+        </div>
+        <div class="container" id="feedback-form">
+            <h2 id="heading-feedback">Send us your feedback</h2>
+            <form class="form-feedback" method="post" autocomplete="off">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="full-name">
+                    Name
+                    <span class="required">
+                        (required)
+                    </span>
+
+                    <span class="error-message">
+                        You must input a real name.
+                    </span>
+
+                    <input id="full-name" name="full-name" required="" type="text" aria-required="true">
+
+                    </label>
+
+                    <label for="email">
+                    Email
+                    <span class="required">
+                        (required)
+                    </span>
+
+                    <span class="error-message">
+                        The email address you entered is not valid.
+                    </span>
+
+                    <input id="email" name="email" required="" type="email" aria-required="true">
+
+                    </label>
+
+                </fieldset>
+
+ 
+
+                <fieldset>
+                    <label for='text-comments'>
+                    What’s on you mind
+                    <span class="required">
+                        (required)
+                    </span>
+
+                    <span class="error-message">
+                        Please give us a little more information about your inquiry.
+                    </span>
+
+                    <textarea id='text-comments' required='' aria-required="true"></textarea>
+                    </label>
+                </fieldset>
+
+                <button class='button' type="submit">Submit Form</button>
+            </form>
+        </div>
+   </section>
+ {% endblock %}
+
+ {% include 'partials/footer.twig' %}

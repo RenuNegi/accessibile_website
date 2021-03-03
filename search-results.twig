@@ -1,0 +1,78 @@
+{% set pagetitle = 'Search results -' %}
+{% set pagedesc = 'Uniformed meditation Blogs' %}
+
+{% extends "partials/base_template.twig" %}
+
+ {% block blockMainContent %}
+
+<script>
+var results = [{
+    url:"home.html",
+    heading:"Your Frontline to Mindfulness",
+    keywords:["home","Uniformed Meditation","Disclaimer","Accessible","empowering","Medical Advice","homepage","front line", "call" ,"phone","sitemap", "aboutus", "callus"],
+    desc:"We value trust, building community, and being an ally to front–line workers and first responders."
+},{
+    url:"services.html",
+    heading:"Our services",
+    keywords:["services","data","career", "meditation","price","consultation","webinars","mindfulness program","classes","corporate","minutes","wellness"],
+    desc:"Our classes and programs offer a chance to give back to those that put themselves on the line everyday as heroes." 
+},
+{
+    url:"media.html",
+    heading:"check out our videos",
+    keywords:["media","video","meditation", "sleep","empower","transcipt","videos","links","aboutus","sitemap","frontline"],
+    desc:"Empowerment of Self Love" 
+},
+{
+    url:"blogs.html",
+    heading:"Mindfulness Weekly",
+    keywords:["blogs","meditation","ingredients","Evy", "Ritual","sleep", "date", "aboutus","accessibility","Sustainability","mindfulness"],
+    desc:"Once you start, miracles will surface!" 
+},
+{
+    url:"mindfulness-self-care-blog.html",
+    heading:"Find Your Sacred Self Care Ritual",
+    keywords:["Sacred Self–Care Ritual","Spend More Time on Yourself","meditation","ingredients","Evy", "blogs", "Consumer","sleep", "date", "aboutus","accessibility","Sustainability","mindfulness"],
+    desc:"How does one spend more time on themselves? Let’s try something right now!" 
+},
+{
+    url:"mindfulness-santizer-wipes-blog.html",
+    heading:"Consumer Convenience vs. Sustainability",
+    keywords:["blogs","meditation","ingredients","Evy","alternatives", "Consumer","sleep", "date", "aboutus","accessibility","Sustainability","mindfulness"],
+    desc:"Did you know that sanitizer wipes are loading up the landfills? It's convenient yet toxic to the earth." 
+},
+{
+    url:"contact.html",
+    heading:"Get in touch",
+    keywords:["contact","faq","frequently", "email","meditation","aboutus", "questions","form", "phone", "address","call","sitemap", "feedback","meditating","practice"],
+    desc:"Schedule a complimentary 10-minute phone consultation to see if we fit your particular needs and goals." 
+},
+{
+    url:"faq.html",
+    heading:"Some frequently asked questions",
+    keywords:["contact","faq","frequently", "thinking","hotline","meditating correctly", "benefit", "address","mind","sitemap", "feedback","meditating","practice"],
+    desc:"If you have questions about meditation, you're not alone–questions will come up so you've come to the right place." 
+},
+{
+    url:"volunteers.html",
+    heading:"Volunteer with us",
+    keywords:["Volunteer","faq","work", "thinking","working","meditating correctly", "contact","interested in working", "address","mind","sitemap", "Hiring","meditating","practice"],
+    desc:"If you have questions about meditation, you're not alone–questions will come up so you've come to the right place." 
+}
+]
+
+</script>
+ <section aria-labelledby="search-results">
+ 
+ <div class="container center margin-form-tp40">
+    <h1 id="search-results">Search Results:</h1>
+    <div id="search-list" class="pad30 margin-form-tp40">
+       
+    
+    </div>
+ </div>
+ 
+ </section>
+ {% endblock %}
+
+ {% include 'partials/footer.twig' %}

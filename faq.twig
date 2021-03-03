@@ -1,0 +1,95 @@
+
+{% set pagetitle = 'FAQ -' %}
+{% set pagedesc = 'some frequently asked question on uniformed meditation' %}
+
+{% extends "partials/base_template.twig" %}
+
+ {% block blockMainContent %}
+
+ 
+   <section aria-labelledby="faq_heading">
+   <div class="container pad-30">
+   <div class="center">
+   <h1 id="faq_heading">Some frequently asked questions</h1>
+     <p>If you have questions about meditation, you're not alone–questions will come up so you've come to the right place. 
+     This FAQ will expand over time, so if you don’t see your question here (or don't like our answer), please contact us.</p></div>
+           <div class="center pad-20"> 
+           <a role="button" tabindex="0" class="toggle-accordion" id="#accordion" aria-expanded="false">Expand All</a></div>
+
+   <div class="row pad-30 faq-panel">
+    <ul aria-label="Frequently asked questions accordion" class="accordion-faq">
+      <li>
+        <span aria-controls="accordion-data" class="accordion-icon" tabindex="0" role="button" aria-expanded="false">How do I know if I'm meditating correctly?</span>
+        <div aria-hidden="true" id="accordion-data" class="accordion-data">
+          <p>By practicing, seeking and finding what feels right for you. Many people experience trouble 
+          thinking of staying still for one minute or not wanting stillness of the mind when they consider
+           an experience of meditation. Remember what's right for you may not be right for everyone.
+            Meditating will feel like exercising a new muscle, so be patient and kind to yourself on this journey.</p>
+        </div>
+      </li>
+
+      <li>
+        <span aria-controls="accordion-data-1" class="accordion-icon" tabindex="0" role="button" aria-expanded="false">Why would this practice benefit me?</span>
+        <div aria-hidden="true" id="accordion-data-1" class="accordion-data">
+          <p>This practice is self-care. Dedicating takes time, effort, and commitment. 
+          Commit to sitting still for five minutes, day after day, until you're ready to try longer. 
+          Clearing your mind and witnessing who you are is important. It helps you tune into what you 
+          stand for as an individual and it identifies what you don’t like to feel. Being mindful means
+           being self aware of the space you take and how it impacts others. There is strength in that. 
+           If you don’t make it the first time, try again the next day. Eventually, if you connect with the practice, 
+           you'll be able to honor the benefits as a part of a self care ritual</p>
+        </div>
+      </li>
+
+      <li>
+      <span aria-controls="accordion-data-2" class="accordion-icon" tabindex="0" role="button" aria-expanded="false">What's a good length of time to meditate in order to benefit from the practice?</span>
+        <div aria-hidden="true" id="accordion-data-2" class="accordion-data">
+          <p>Depending on the individual and where you're at in your development in the practice of meditation, 
+          starting with five minutes straight is good. For the more experienced, pushing yourself to the one&ndash;hour 
+          mark is possible, and trying for 90–ADD IN "MINUTE" sessions is amazing. The  general rule is: The more you put in,
+           the more self-care and awareness you can get back.</p>
+        </div>
+      </li>
+
+        <li>
+      <span aria-controls="accordion-data-3" class="accordion-icon" tabindex="0" role="button" aria-expanded="false">I can't stop my mind. I just keep thinking and thinking no matter what I try.</span>
+        <div aria-hidden="true" id="accordion-data-3" class="accordion-data">
+          <p>You are not alone. The idea that you should be able to stop your mind completely is a common 
+          myth in spiritual circles. As a human being, your mind will kick in to help you whenever you need it. 
+          It's more about surrendering the thoughts and telling your mind that you are safe and ready to explore 
+          the depths of you.</p>
+        </div>
+      </li>
+
+      <li>
+      <span aria-controls="accordion-data-4" class="accordion-icon" tabindex="0" role="button" aria-expanded="false">Where does meditation come from?</span>
+        <div aria-hidden="true" id="accordion-data-4" class="accordion-data">
+          <p>Meditation is an ancient practice that is believed to originate in India several thousand years ago. 
+          Throughout early history, the practice was adopted by neighboring countries quickly and formed a part of many 
+          religions throughout the world. We honor meditation as a sacred practice that has graced our lives by 
+          thanking the creators of meditation and the eastern world's wellness practices.</p>
+        </div>
+      </li>
+
+       <li>
+      <span aria-controls="accordion-data-5" class="accordion-icon" tabindex="0" role="button" aria-expanded="false">How do I access your hotline? Do you need a smartphone?</span>
+        <div aria-hidden="true" id="accordion-data-5" class="accordion-data">
+          <p>You do not need a smart phone or internet access to meditate with us. 
+          Simply dial our toll free number and use the pin provided for full access.</p>
+        </div>
+      </li>
+    </ul>
+
+
+  
+    
+  </div>
+  </div>
+  </section>
+
+
+ {% endblock %}
+   
+
+
+
